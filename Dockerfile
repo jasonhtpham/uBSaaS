@@ -14,6 +14,6 @@ EXPOSE 8080
 RUN npm cache clean --force
 RUN npm install --silent
 RUN cp .env.example .env
-RUN PROJECT_FOLDER=wecredits-bucket bash setup_upload.sh
+RUN PROJECT_FOLDER=schare-bucket bash setup_upload.sh
 
 CMD ["npm", "start"]
